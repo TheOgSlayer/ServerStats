@@ -1,0 +1,21 @@
+name: ServerStats
+version: 1.0.0
+main: dev.serverstats.ServerStats
+api-version: '1.21'
+softdepend: [Vault]
+description: Player stats (money, kills, deaths, playtime) and leaderboards.
+commands:
+  stats:
+    description: View your stats or another player's stats
+    usage: /stats [player]
+    permission: serverstats.stats
+  leaderboard:
+    description: View the server leaderboards
+    usage: /leaderboard
+    aliases: [lb, top]
+    permission: serverstats.leaderboard
+permissions:
+  serverstats.stats:
+    default: true
+  serverstats.leaderboard:
+    default: true
